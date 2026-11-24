@@ -130,6 +130,14 @@ nav a.on,nav a:hover{background:rgba(255,255,255,.2);box-shadow:0 0 0 1px rgba(2
 .stile:hover img,.stile:focus-visible img{filter:drop-shadow(0 12px 18px rgba(25,199,255,.5))}
 @media(prefers-reduced-motion:reduce){.stile{transition:none}.stile:hover{transform:none}}
 @media(prefers-reduced-motion:no-preference){.hero h1{animation:rise .7s ease both}@keyframes rise{from{opacity:0;transform:translateY(14px)}}}
+/* buttons: filled blue, readable in light and dark */
+.btn.main,.card .btn,.card .btn.main,.card .btn[style]{-webkit-appearance:none;appearance:none;color:#fff;text-shadow:0 1px 1px rgba(2,24,90,.35);background:linear-gradient(135deg,#0a63d6,#19a6f0);border:1px solid rgba(255,255,255,.35);box-shadow:0 6px 16px rgba(10,99,214,.35),0 1px 0 rgba(255,255,255,.35) inset;-webkit-backdrop-filter:none;backdrop-filter:none;transition:transform .2s,box-shadow .2s,filter .2s}
+.btn.main:hover,.card .btn:hover{transform:translateY(-1px);filter:brightness(1.08);box-shadow:0 9px 20px rgba(10,99,214,.45),0 1px 0 rgba(255,255,255,.35) inset}
+.btn.main:active,.card .btn:active{transform:translateY(0);filter:brightness(.96)}
+.btn:focus-visible,.menu:focus-visible{outline:3px solid #19c7ff;outline-offset:2px}
+.card .btn,.btn.main{text-align:center;line-height:1.2}
+.card .btn{padding:11px 20px;font-size:14px}
+@media(prefers-reduced-motion:reduce){.btn.main,.card .btn{transition:none}.btn.main:hover,.card .btn:hover{transform:none}}
 </style></head><body>
 <header><div class="wrap bar">
 <a href="#home" class="logo" aria-label="OPTIE 1 Smart Living home"><span class="olg" id="hl"><img class="wm" alt="" width="896" height="363"><span class="tab"><img class="flat" alt=""><canvas id="olgc" aria-hidden="true"></canvas></span></span></a>
