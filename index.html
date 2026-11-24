@@ -156,6 +156,56 @@ nav a.on,nav a:hover{background:rgba(255,255,255,.2);box-shadow:0 0 0 1px rgba(2
 @media(max-width:760px){.hc .arr{display:none}}
 @media(prefers-reduced-motion:reduce){.hc .slide{transition:none}}
 .hc+.wrap .strip{z-index:4}
+
+/* ---------- polish: rhythm, symmetry, smaller service icons ---------- */
+section{padding:30px 0}
+h2{font-size:clamp(22px,2.6vw,28px);font-weight:800;letter-spacing:-.01em;margin-bottom:18px}
+.sub{margin:-10px 0 20px;font-size:15px}
+.grid{gap:16px}.info,.offers,.promo{gap:16px}
+.card{border-radius:20px;padding:20px}
+.card h3{font-size:17px;font-weight:700}
+.card p{flex:1;line-height:1.5}
+.card .ic{width:52px;height:52px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:6px;background:linear-gradient(145deg,rgba(25,199,255,.22),rgba(10,99,214,.14));border:1px solid rgba(255,255,255,.7);box-shadow:0 6px 14px rgba(10,63,168,.12)}
+.card .ic .ci{width:40px;height:auto}
+.card .btn{margin-top:12px}
+/* Our services: compact icons */
+#homeSvc{grid-template-columns:repeat(10,1fr);gap:20px 8px;align-items:start}
+.stile{gap:8px;font-size:12px;font-weight:600;padding:2px 0}
+.stile img{width:100%;max-width:64px;margin:0 auto}
+.stile span{display:block;max-width:100px;min-height:2.5em}
+@media(max-width:1000px){#homeSvc{grid-template-columns:repeat(5,1fr)}}
+@media(max-width:600px){
+#homeSvc{grid-template-columns:repeat(2,1fr);gap:10px}
+#homeSvc .stile:last-child{grid-column:auto}
+.stile{flex-direction:row;align-items:center;justify-content:flex-start;text-align:left;gap:10px;padding:10px 12px;border-radius:18px;font-size:12.5px;background:linear-gradient(145deg,var(--glass2),var(--glass) 55%);border:1px solid var(--gedge);box-shadow:0 8px 22px var(--gshadow)}
+.stile img{width:44px;max-width:44px;flex:none;margin:0}
+.stile span{max-width:none;min-height:0;display:block}
+}
+/* promo banners: balanced text block */
+@media(min-width:641px){.pbox .bt{width:42%}.pbox h3{font-size:clamp(16px,3.5cqw,28px);white-space:nowrap}}
+/* offer banner */
+.offer{padding:28px 32px;gap:16px}
+.offer .tag{font-size:clamp(26px,3.6vw,38px);white-space:nowrap;text-align:center}
+@media(max-width:600px){.offer{padding:22px;flex-direction:column;align-items:stretch}.offer .tag{align-self:stretch;transform:rotate(-2deg)}}
+/* info cards */
+.map{min-height:120px;gap:4px;font-size:14px;margin-top:6px}
+.map b{font-size:30px}
+.info>.card{min-height:100%}
+/* reviews: 3 equal columns */
+#rev{grid-template-columns:repeat(3,1fr)}
+@media(max-width:860px){#rev{grid-template-columns:1fr}}
+#rev .card p{font-size:15px;color:var(--text);opacity:.85}
+#rev .who{align-items:center}
+#rev .who>div:last-child{line-height:1.35}
+#rev small{display:block;color:var(--muted)}
+.av{width:42px;height:42px;flex:none;background:linear-gradient(135deg,#0a63d6,#19a6f0);box-shadow:0 4px 10px rgba(10,99,214,.35)}
+.stars{white-space:nowrap}
+/* footer */
+footer{padding:40px 0 26px}
+footer .cols{grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px}
+@media(max-width:760px){footer .cols{grid-template-columns:1fr 1fr}footer .cols>div:first-child{grid-column:1/-1}}
+footer h4{font-size:14px;letter-spacing:.04em;text-transform:uppercase;opacity:.9}
+footer>.wrap:last-child{background:linear-gradient(rgba(255,255,255,.14),rgba(255,255,255,.14)) 18px 0/calc(100% - 36px) 1px no-repeat;padding-top:18px;font-size:13px}
 </style></head><body>
 <header><div class="wrap bar">
 <a href="#home" class="logo" aria-label="OPTIE 1 Smart Living home"><span class="olg" id="hl"><img class="wm" alt="" width="896" height="363"><span class="tab"><img class="flat" alt=""><canvas id="olgc" aria-hidden="true"></canvas></span></span></a>
