@@ -206,6 +206,25 @@ footer .cols{grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px}
 @media(max-width:760px){footer .cols{grid-template-columns:1fr 1fr}footer .cols>div:first-child{grid-column:1/-1}}
 footer h4{font-size:14px;letter-spacing:.04em;text-transform:uppercase;opacity:.9}
 footer>.wrap:last-child{background:linear-gradient(rgba(255,255,255,.14),rgba(255,255,255,.14)) 18px 0/calc(100% - 36px) 1px no-repeat;padding-top:18px;font-size:13px}
+
+/* hero text slide = exactly the banner's size (3:1), content scales with it */
+.hc .slide.hero{aspect-ratio:2172/724;container-type:inline-size;padding:0;justify-content:center;overflow:hidden}
+.hc .hero .wrap{width:100%;align-items:center;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr)}
+.hc .hero h1{font-size:min(3.6cqw,44px);max-width:none;line-height:1.12}
+.hc .hero p{font-size:min(1.6cqw,18px);max-width:none;margin:min(1.2cqw,12px) 0 0}
+.hc .hero .row{margin-top:min(2cqw,24px);gap:min(1.2cqw,12px)}
+.hc .hero .btn{font-size:min(1.45cqw,15px);padding:min(1.1cqw,13px) min(2.1cqw,24px)}
+.hc .hero .art{width:min(27cqw,380px);max-height:88%;object-fit:contain}
+.hc+.wrap .strip,.hc.bn+.wrap .strip{margin-top:16px}
+.hc .dots,.hc.bn .dots{bottom:10px}
+@media(max-width:760px){
+.hc .hero .wrap{grid-template-columns:1fr}
+.hc .hero h1{font-size:5.2cqw}
+.hc .hero .row{margin-top:3cqw;gap:8px;flex-wrap:nowrap}
+.hc .hero .btn{font-size:12px;padding:8px 14px;white-space:nowrap}
+.hc .hero p{display:none}
+.hc .slide.hero{padding-bottom:14px}
+}
 </style></head><body>
 <header><div class="wrap bar">
 <a href="#home" class="logo" aria-label="OPTIE 1 Smart Living home"><span class="olg" id="hl"><img class="wm" alt="" width="896" height="363"><span class="tab"><img class="flat" alt=""><canvas id="olgc" aria-hidden="true"></canvas></span></span></a>
